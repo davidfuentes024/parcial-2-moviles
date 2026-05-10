@@ -1,0 +1,42 @@
+name: messaging_app
+description: App de mensajería con Firebase FCM para Android
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.10
+
+  # Notificaciones locales (mostrar push cuando app está en foreground)
+  flutter_local_notifications: ^16.3.2
+
+  # HTTP
+  http: ^1.2.0
+  http_parser: ^4.0.2
+
+  # Almacenamiento seguro del JWT
+  flutter_secure_storage: ^9.0.0
+
+  # Selector de imagen (galería)
+  image_picker: ^1.0.7
+
+  # Imágenes de red con cache
+  cached_network_image: ^3.3.1
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
